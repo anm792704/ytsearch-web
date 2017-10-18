@@ -1,14 +1,14 @@
 /* Contact form */
-form label {
+searchForm label {
   font-size: 1.2em;
   font-weight: bold;
   display: block;
   padding: 10px 0;
 }
 
-form input#name,
-form input#email,
-form input#subject {
+Form input#title,
+Form input#description1,
+Form input#description2 {
   width: 400px;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
@@ -21,7 +21,7 @@ form input#subject {
 }
 
 
-form textarea#message {
+Form textarea#message {
   width: 500px;
   height: 100px;
   background-color: #fafafa;
@@ -34,7 +34,7 @@ form textarea#message {
   font-size: 1.1em;
 }
 
-form input#submit {
+Form input#submit {
   display: block;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -53,7 +53,7 @@ form input#submit {
   background-image: linear-gradient(top, #f4f4f4, #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
 }
 
-form input#submit:hover{
+Form input#submit:hover{
   cursor: pointer;
   border:1px solid #c1c1c1;
   background-color: #dbdbdb;

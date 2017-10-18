@@ -36,7 +36,7 @@ def index():
 @app.route('/search_form', methods=['GET', 'POST'])
 def search_form():
     searchForm = SearchForm()
-     resultList.clear()
+    resultList.clear()
 
     if 'credentials' not in flask.session:
         return flask.redirect(flask.url_for('oauth2callback'))

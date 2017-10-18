@@ -1,12 +1,16 @@
 <html>
   <head>
-    <title>{{ title }} - microblog</title>
+    <title>{{ title }} - Youtube</title>
   </head>
   <body>
+     <table>
+       
         {% for result in resultList %}
-         <h1>Title: {{ result.title }}</h1>
-          Description: {{ result.description }}
-         URL: {{ result.url }}
+        <tr><td><h3>Title: {{ result.title }}</h3></td></tr> 
+          <tr><td>Description: {{ result.description }}</td></tr>
+         <tr><td>URL: <a href="https://youtube.com/watch?v={{ result.url }}">https://youtube.com/watch?v={{ result.url }}</a></td></tr>
+        <!-- <iframe src="https://www.youtube.com/embed/{{ result.url }}" width="426" height="240" frameborder="0" allowfullscreen></iframe> -->
         {% endfor %}
+    </table>
   </body>
 </html>

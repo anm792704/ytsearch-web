@@ -4,41 +4,22 @@
   <h2>Search Form</h2>
   <form action="{{ url_for('search_form') }}" method=post>
     {{ searchForm.hidden_tag() }}
-
+    <table>
+    <tr><td>
     {{ searchForm.title.label }}
     {{ searchForm.title }}
-
+    </td></tr>
+    <tr><td>
     {{ searchForm.description1.label }}
     {{ searchForm.description1 }}
-
+    </td></tr>
+    <tr><td>
     {{ searchForm.description2.label }}
     {{ searchForm.description2 }}
-
+    </td></tr>
+    <tr><td>
     {{ searchForm.submit }}
-
+    </td></tr>
+      </table>
   </form>
 {% endblock %}
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
